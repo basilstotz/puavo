@@ -1,0 +1,192 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<!--<link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+<script>
+$(function() {
+$( ".accordions" ).accordion({
+heightStyle: "content",
+collapsible: true,
+/*active: false,*/
+});
+});
+</script>
+
+
+
+
+</head>
+<body>
+
+	<div id="header-container">
+		<header class="wrapper clearfix">
+			<h1 id="title">amXa consulting</h1><br/><br/>
+                        					
+			<nav>
+				<ul>
+					<li><a href="index.html">Puavo</a></li>
+					<li><a href="services.html">Dienste</a></li>
+                                    <!--    <li><a href="computer.html">Computer</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+			-->
+
+				</ul>
+			</nav>
+<div style="color:#fff">
+
+</div>
+		</header>
+               
+	</div>
+<!-- <img  src="main-header-bg-props-clouds.png"> -->
+
+	<div id="main-container-services">
+		<div  class="main-left wrapper clearfix">
+			
+		<article>
+		   <header>
+                      <h1>Dienstleistungen</h1>
+                      <p></p>
+                   </header>
+<br/><br/>
+<h2>Technische Dienstleistungen</h2>
+
+<p>
+Wir begleiten und unterstützen sie von der Erstberatung bis zum Unterhalt und Support im laufenden Betrieb.  
+</p>
+
+<div class="accordions">
+<h3>Beratung und Bedarfsanalyse</h3>
+<div>
+
+<p>
+Basierend auf Ihre konkrete Situation erstellen wir mit Ihnen zusammen ein auf Ihre Schule zugeschnittenes ICT-Konzept mit Kostenvoranschlag.
+</p>
+</div>
+<h3>Planung und Realisierung</h3>
+<div>
+<p>
+Wir planen Ihre Schul-ICT aufgrund der vorangegangen Bedarfsanalyse. und realisieren Ihr Projekt gemäss Ihren Wünschen. 
+</p>
+</div>
+<h3>Unterhalt und Support</h3>
+<div>
+<p>
+Unsere Unterhalts-Dienste garantieren eine rundum erfreuliche ICT: Computer und Laptops, die jederzeit einsatzbreit und 'up to date' sind.</p><p>Bei eventuell auftretenden Problemen oder Wünschen hilft Ihnen unser Telefon- und Mail-Support weiter. 
+</p>
+</div>
+
+</div> <!-- accordion -->
+
+<p>Unsere technischen Dienstleistungen befreien Ihre Schule rundum von der Last der ICT-Technik und setzen so Ressourcen für das "Kerngeschäft" frei!
+			
+
+		
+			
+	                      
+
+
+	</article>
+<aside>
+<h3>Jede Schule ist einzigartig</h3>
+
+<p>Jede Schule ist (nicht nur) baulich einzigartig. Jeder Schule stellen sich daher einzigartige Anforderungen an die Netzwerk-Infrastruktur. Puavo kann in allen Situationen effektiv eingesetzt werden, denn es hat sehr moderate Netzwerk-Anforderungen.<p>
+
+</p> Viele Schulen haben bereits viel in Ihre ICT (Netzwerk, Computer, Drucker usw.) investiert, diese Investitionen sollen erhalten bleiben. Mit Puavo kann Vorhandenes  weiter verwendet werden oder es muss nur wenig ergänzt werden.</p>
+
+<p>Lassen Sie sich unverbindlich und kostenlos beraten: Wir erstellen einen individuellen ICT-Konzept-Vorschlag für Sie und Ihre Schule!</p>
+
+</aside>
+</section>
+</div> <!-- main -->
+
+		<div class="main-right wrapper clearfix">
+<article>
+<h2>Computer und Laptops</h2>
+
+<p>Wir haben für Sie einen Standard-Desktop-Computer zusammengestellt und ein Standard-Laptop evaluiert.</p>
+
+<p>Beide Geräte sind kostengünstig, langlebig und von hoher Qualität. Es sind kleine, schnelle und stromsparende Multimedia-Maschinen, welche den höchsten Ansprüchen genügen.</p>
+
+</article>
+<aside>
+<h3>Puavo ist ein "Omnivor"</h3>
+<p>
+Praktisch jeder Computer und jedes Laptop, egal welcher Marke und Modell, kann mit Puavo verwendet werden.</p>
+<!--
+<p>  Diese werden aber von den meisten Computern, welche weniger als vier Jahre alt sind, erfüllt.</p>
+-->
+<p>Puavo erlaubt es zudem verschiedene Marken und Modelle parallel zu nutzen.</p><p> Sie können daher zum Beispiel neue Computer (als Erstnutzung) und verschiedene ältere Computer (als Zweitnutzung) nebeneinader verwenden.</p>
+</aside>
+</div> <!--main2-->
+		<div class="main-left wrapper clearfix">
+<article>
+	<section>
+<h2>Schulinterne Fortbildung</h2>
+<p>Wir führen für Lehrer und Lehrerinnen Einführungskurse zu unseren Desktop und zu den wichtigsten Anwendungen durch.</p> <!--Mögliche Themen sind:
+<ul>
+ <li>LibreOffice anwenden</li>
+ <li>Photos archivieren und bearbeiten</li>
+ <li>Seiten gestalten mit Scribus</li>
+</ul>
+-->
+<p>Für schulinterne ICT-Adminstratoren bieten wir eine Einführung in die ICT-Verwaltung mit Puavo an. Sie können dann Ihre SchülerInnen, LehrerInnen und Computer selber verwalten, ohne auf einen externen Support angewiesen zu sein.</p>
+
+<p> Wir stellen aber auch für Sie spezielle Kurse gemäss Ihren Wünschen zusammen.</p>
+</section>
+
+</article>
+<aside>
+<img src="main-header-bg-props-kurre.png" width="400px">
+</aside>
+
+		
+		</div> <!-- #main2 -->
+	</div> <!-- #main-container -->
+
+	<div id="footer-container">
+		<footer class="wrapper">
+                       <div>
+			
+                        <p><b>amXa consulting</b><br/>
+                           Burgfelderstrasse 189<br/>
+                           4054 <b>Basel</b><br/>
+                           <a href="mailto:info@amxa.ch">info@amxa.ch</a><br/>
+	                   <a href="tel:+41615110853">+046615110843</a>
+                        </p>
+                      </div>
+		</footer>
+	</div>
+
+</body>
+</html>
+
+<!--
+				<footer>
+					<h3>article footer h3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+				</footer>
+			</article>
+-->

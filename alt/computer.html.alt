@@ -1,0 +1,259 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<!--<link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+<script>
+$(function() {
+$( "#accordion" ).accordion({
+heightStyle: "content",
+collapsible: true,
+active: false,
+});
+});
+$(function() {
+$( "#accordion2" ).accordion({
+heightStyle: "content",
+collapsible: true,
+active: false,
+});
+});
+</script>
+
+
+
+
+</head>
+<body>
+
+	<div id="header-container">
+		<header class="wrapper clearfix">
+			<h1 id="title">amXa consulting</h1><br/><br/>
+                        					
+			<nav>
+				<ul>
+					<li><a href="index.html">Puavo</a></li>
+					<li><a href="services.html">Services</a></li>
+                                        <li><a href="computer.html">Computer</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+			
+
+				</ul>
+			</nav>
+<div style="color:#fff">
+
+</div>
+		</header>
+               
+	</div>
+<!-- <img  src="main-header-bg-props-clouds.png"> -->
+
+	<div id="main-container">
+		<div id="main" class="wrapper clearfix">
+			
+			<article>
+				<header>
+<h1>Computer und Laptops</h1>
+<p>Puavo befriedigt alle ICT-Bedürfnisse einer Schule, Puavo ist vollständiges, durchdachtes und erprobtes System.</p>
+				</header>
+
+		
+				<section>
+					<h2>Besser lernen und lehren</h2>
+<p>Mit Puavo verwaltete Computer erlauben den zuverlässigen und schnellen Zugang zu allen Programmen, Inhalten und Geräten, welche in einer Lernumgebung gebraucht werden.</p>
+
+
+<div id="accordion">
+<h3>Überaschungslos und sorgenfrei unterrichten</h3>
+<div>
+<p>
+Die  Puavo-Clients starten schnell und arbeiten äusserst zuverlässig. Alle Computer und Laptops sind jederzeit exakt gleich konfiguriert. Dies ermöglicht einen planbaren und überraschungsfreien Unterricht. 
+</p>
+</div>
+<h3>Ergonomie verbessern</h3>
+<div>
+<p>
+Puavo-Clients sind klein, extrem leise und entwickeln deutlich weniger Wärme als herkömmliche PCs.
+</p>
+</div>
+<h3>Vielfalt der Anwendungen nutzen</h3>
+<div>
+<p>
+Nebst den Standard-Anwendungen  sind in Puavo über hundert weitere Anwendungen bereits vorinstalliert. Puavo  unterstützt  die vom Kanton empfohlenen Lernprogramme.
+</p>
+</div>
+<h3>Neue Technologien anwenden</h3>
+<div>
+<p>
+Zusätzlich zu „klassischen“ Geräten wie Laptops und PCs unterstützt Puavo auch den Einsatz von „neueren“ Geräten wie Tablets, Mediaplayer und interaktive Whiteboards. 
+</p>
+</div>
+</div>
+	<!--<p>, welche für das Lehren und das Lernen benötigt werden , abgestimmt auf die Bedürfnisse von SchülerInnen und LehrerInnen.</p> 			-->				
+                                </section>
+
+
+	</article>
+<aside>
+				<h3>Was ist Puavo?</h3>
+<p>Puavo ist ein ICT-Verwaltungs-System für Schulen  (und ein finnischer männlicher Vorname).</p>
+
+			<p>Puavo wurde von der finnischen Firma <a href="http://www.opinsys.fi/en/company">Opinsys</a>  für den täglichen Gebrauch in Schulen entwickelt und wird in Zusammenarbeit mit den Schulen aktiv weiterentwickelt.</p>
+
+<p>
+Puavo wird seit 2005 produktiv in Schulen eingesetzt. Im Jahr 2013 wurden bereits mehr als  zehntausend Computer und  Laptops in über hundertfünfzig Gemeinden mit Puavo verwaltet.
+</p>
+</aside>
+</section>
+</div> <!-- main -->
+
+		<div id="main2" class="wrapper clearfix">
+<article>
+<h2>Supportaufwand minimieren</h2>
+<p>Mit Puavo verwaltete Computer befreien Schulen und Gemeinden vollständig vom Installations- und Support-Aufwand.</p>
+<p><b>
+Auspacken, anschliessen, registrieren und loslegen!
+</b></p>
+<p> Nachdem ein neuer Computer ans Netzwerk angeschlossen und in Puavo registriert wurde, können Sie diesen Computer "out of the box" sofort im Unterricht einsetzen.</p>
+<p><b> 
+Mehr gibt es nicht  zu tun, auch später nicht,
+</b></p>
+<p>... dank Puavo bleibt jeder Computer auch in Zufunft immer automatisch aktuell und funktioniert jederzeit problemlos, ohne dass Sie irgendetwas tun müssen. <!--: Es muss gar nichts installiert oder konfiguriert werden.-->
+</p>
+<!--<p> 
+Es muss sogar nie mehr etwas installiert, aktualisiert oder konfiguriert werden!
+</p>
+<p>Puavo wird selbstverständlich auch weiterhin selbstätig dafür sorgen, dass dieser Computer immer perfekt funktioniert und jederzeit auf dem aktuellsten Stand ist.
+</p>
+<p>
+
+</p>
+-->
+<!--
+<h2>Benutzer und Computer effizienter verwalten</h2>
+<p>Sie können sowohl ihre BenutzerInnen  als auch alle ihre Geräte einfach und bequem mit einer intuitiven  <a href="http://www.lernfeld.ch/Puavo.mp4">Weboberfläche</a> selber verwalten. Sie sind für diese Aufgaben nicht mehr auf einen externen Support angewiesen.</p>
+-->
+
+
+
+
+
+</article>
+<aside>
+<h3>So funktionert's!</h3>
+<p> 
+Ein vom Benutzer nicht wahr genommener Vorgang  ermöglicht die vollständige Wartungfreiheit:
+</p>
+<p>
+Jeder Computer wird bei jedem Neustart innert Sekunden komplett neu installiert.</p>
+<p>
+Als Installations-Quelle wird ein sogenanntes Image verwendet. Dieses Image wird von amXa regelmässig aktualisiert.
+</p>
+<p>
+So haben Sie jederzeit einen frisch installierten, aktuellen und perfekt funktionierenden Computer vor sich.
+</p>
+</aside>
+</div> <!--main2-->
+		<div id="main3" class="wrapper clearfix">
+<article>
+	<section>
+<h2>Ökonomischer und ökologischer handeln</h2>
+
+<p>
+Mit Puavo verwaltete Computer sind kostengünstig und haben einen kleinen ökologischen Fussabdruck. 
+</p>
+
+<div id="accordion2">
+
+<!--
+<h3>Arbeitsaufwand verringern</h3> 
+<div>
+<p>
+Puavo befreit die Schulen vollständig vom ICT-Supportaufwand und setzt so Ressourcen für pädagogische Aufgaben frei.
+</p>
+</div>
+-->
+<h3>Hardwarekosten sparen</h3>
+<div>
+<p>
+Puavo-Clients haben eine deutlich längere Lebendauer als herkömmliche PCs. Es können neue „leichtgewichtige“, kostengünstige Computer oder ältere (z.B. von Firmen gesponserte) Computer  genutzt werden
+</p>
+</div>
+<h3>Stromrechnung senken</h3>
+<div>
+<p>
+Sind die Clients nicht in Gebrauch  werden sie automatisch abgeschaltet. Zudem brauchen unsere Puavo-Clients bis zu fünfmal weniger Strom als herkömmliche PCs.
+</p>
+</div>
+<h3>Lizenzkosten reduzieren</h3>
+<div>
+<p>
+Es fallen viel weniger oder gar keine Lizenzkosten an.
+</p>
+</div>
+
+</div>
+
+
+</section>
+
+</article>
+<aside>
+<h3>ICT an Primarschulen</h3>
+<p>Puavo entspricht den von der Bildungs-, Kultur- und Sportdirektion des Kantons Basel-Land­schaft veröffentlichten Empfehlungen <a href="http://www.baselland.ch/fileadmin/baselland/files/docs/ekd/schulen/eval/planungshilfe_primar.pdf">ICT an Primarschulen</a>, bei signifikant kleineren Kosten. </p>
+</aside>
+<!--
+<aside>
+<h3>Grüne IT</h3>
+<p>Der stark reduzierte Material- und Strom-Verbrauch macht sich nicht nur im Portmonaie, sondern auch im ökologischen Fussabdruck bemerkbar: So können hunderte Kilowattstunden Strom, hunderte Kilogramm CO<span style="font-size:12px;position:relative;left:1px;top:3px">2</span> und grosse Mengen an Rohstoffen eingespart werden.</p>
+</aside>
+-->
+		
+		</div> <!-- #main2 -->
+	</div> <!-- #main-container -->
+
+	<div id="footer-container">
+		<footer class="wrapper">
+                       <div>
+			
+                        <p><b>amXa consulting</b><br/>
+                           Burgfelderstrasse 189<br/>
+                           4054 <b>Basel</b><br/>
+                           <a href="mailto:info@amxa.ch">info@amxa.ch</a><br/>
+	                   <a href="tel:+41615110853">+046615110843</a>
+                        </p>
+                      </div>
+		</footer>
+	</div>
+
+</body>
+</html>
+
+<!--
+				<footer>
+					<h3>article footer h3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+				</footer>
+			</article>
+-->
