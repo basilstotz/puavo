@@ -145,7 +145,7 @@ body{
 
 
 .wrapper{
-	width:100%;
+	width:90%;
 	margin:0 5%;
 }
 
@@ -165,10 +165,14 @@ body{
 .main-right aside      { border-top:    0px solid #aaa; }
 
 .main-left aside{
-	background:#d1f1a3;
+/*	background:#d1f1a3;*/
+	background:#fff;
+	color:#ddd;
 }
 .main-right aside{
-	background:#d1f1a3;
+/*	background:#d1f1a3;*/
+	background:#fff;
+        color:#ddd
 }
 
 
@@ -226,6 +230,7 @@ nav a:hover{
     MOBILE: Main
    ============== */
 .main-container{
+/*        background:#d1f1a3; */
         background:#fff;
 }
 
@@ -243,7 +248,8 @@ nav a:hover{
 /* war margin-top:30px 0; */
         margin-top:0px;
 	color:#444;
-	padding:5px 3% 20px;
+/*	padding:5px 3% 20px;*/
+	padding:0px;
 
         line-height:1.2;
 /*
@@ -266,7 +272,9 @@ nav a:hover{
 /* war margin-top:30px 0; */
         margin-top:0px;
 	color:#444;
-	padding:5px 3% 20px;
+/*	padding:5px 3% 20px;*/
+	padding:0px;
+
         line-height:1.2;
 /*
         -moz-border-radius: 8px;
