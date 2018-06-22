@@ -1,0 +1,9 @@
+#!/bin/sh
+
+S="mkv"
+
+for N in *${S}; do
+  echo $N
+  M=$(basename $N .$S)
+  echo ffmpeg -i $M.$S  -strict -2 $M.mp4  
+done

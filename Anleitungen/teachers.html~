@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+<style>
+  h1 {background-color: white;}
+  h2   {background-color: cyan;}
+  h3   {background-color: lightgrey;}
+</style>
+
+</head>
+
+
+
+<body>
+
+<h1>Kompetenzen ICT-Pass und so ...</h1>
+<!--
+<h2>Geräte</h2>
+
+<h3>Ich kann den Computer und die dazugehörenden Geräte richtig starten und herunterfahren.</h3>
+
+<h3>Ich kann meinen Arbeitsplatz so einrichten, dass ich am Computer arbeiten kann.</h3>
+
+<h3>Ich kann den Computer und die dazugehörenden Geräte in der Schule richtig benennen und weiss, was ich damit machen kann.</h3>
+
+<h3>Ich kann den Unterschied zwischen Hard- und Software erklären</h3>
+
+<h3>Ich kenne den Unterschied zwischen Anwendungs- und Betriebssytemsoftware </h3>
+
+<h3>Ich kenne verschiedene Speichermedien, USB-Stick, CD-ROM, DVD, BR, Festplatten, Schulnetzwerk, Internet-Cloud.</h3>
+
+-->
+
+<h2>Daten</h2>
+
+<h3>Ich kann mich am Netzwerk in der Schule an- und abmelden.</h3>
+
+<p>Screencast<p>
+
+
+<h3>Ich kann ein sicheres Passwort wählen.</h3>
+
+<p>Screencast<p>
+
+
+<h3>Ich kann Dokumente und Ordner erstellen, umbenennen, ablegen und wieder finden.</h3>
+
+<p>Screencast<p>
+
+<p>Desktop organisieren</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/desktop-01-organisieren.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+
+
+
+
+<h3>Ich kann Fenster vergrössern, verkleinern, minimieren, maximieren, neben- einander anordnen und schliessen.</h3>
+
+<p>Screencast<p>
+
+
+<h3>Ich kann Dokumente von oder zu einem externen Datenträger kopieren <!--auf ein anderes kopieren (z.B. von der Festplatte auf einen USB-Stick)-->.</h3>
+
+<p>Screencast<p>
+
+
+<!--<h3>Ich nutze bei Problemen die Hilfefunktion der Software und kann Arbeitstechniken anwenden, um Probleme einzugrenzen.</h3>-->
+
+<h3>Ich kann auf dem Desktop eine Verknüpfung erstellen, Dokumente und Ordner löschen und den Papierkorb leeren.</h3>
+
+<p>Screencast<p>
+
+<h2>Beamer und Interaktive Whiteboards</h2>
+
+<h3>Ich kann einen Beamer anschliessen und die Anzeigen richtig konfigurieren</h3>
+
+<p>Screencast</p>
+
+<h3>Ich kann die Anzeigen für ein interaktives Whitboard konfigurieren</h3>
+
+<p>Screencast</p>
+
+
+<h2>Tools</h2>
+
+<h3>Ich kann die in der Schule verwendete Lernsoftware starten, durcharbeiten und beenden.</h3>
+
+<p>Screencast</p>
+
+<!--<h3>Ich kann E-Mails schreiben und beantworten.</h3>-->
+
+<h3>Ich kann mich auf einer Plattform <!--(z. B. Educanet2)--> mit anderen austauschen <!--(z. B. Chat, Forum, gemeinsame Dateien, Wiki, Blog)-->.</h3>
+
+<p>Dateien: Gruppenordner benutzen (PDF und Screencast)</p>
+
+
+<h3>Ich kann mit OpenBoard und Beamer Präsentationen zeigen</h3>
+
+<p>Screencast</p>
+
+<h2>Anwendungen</h2>
+
+<h3>Ich kann Texte geläufig schreiben, überarbeiten, formatieren und gestalten.</h3>
+
+<p>LibreOffice Writer: 1. Seite einrichten</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/writer/writer-01-Seite_einrichten.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Writer: 2. Mit Text arbeiten</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/writer/writer-02-mit_Text_arbeiten.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Writer: 3. Tabulatoren</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/writer/writer-03-Tabulatoren.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Writer: 4. Bilder im Text</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/writer/writer-04-Bild_in_Text.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Writer: 5. Mit Textfeld arbeiten</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/writer/writer-05-Mit_Textfeld_arbeiten.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Writer: <a href="http://wiki.documentfoundation.org/images/1/1b/02WH_02WriterEinstellungen_V41.pdf">Einstellungen</a> (PDF)</p>
+
+
+<p>Scribus: <a href="http://www.medienkindheit.de/medien-kreativ/screencast-scribus-gestalten-einer-schuelerzeitung/">Schülerzeitung herstellen</a> (Video)</p>
+
+<p>MyMoment</p>
+
+<!--<h3>Ich kann Bilder und Texte aus und dem Internet kopieren, in ein Text-Dokument einfügen und gestalten.</h3>-->
+
+<h3>Ich kann in einem Text-Dokument eine Tabelle erstellen und bearbeiten<!--: in die Tabelle schreiben, Schriftausrichtung, Füll- und Schriftfarbe festlegen, Rahmenlinien ändern.--></h3>
+
+<p>LibreOffice Writer: <a href="https://wiki.documentfoundation.org/images/5/56/WriterHandbuch_Kapitel_09_ArbeitenMitTabellen_V53.pdf">Arbeiten mit Tabellen</a> (PDF)</p>
+
+<h3>Ich kann in einem Tabellenkalkulations-Dokument Texte und Zahlen eingeben.</h3>
+
+
+
+<p>LibreOffice Calc: <a href="https://wiki.documentfoundation.org/images/a/a8/Calc_Handbuch_02_Datenbearbeitung_V53.pdf">Eingabe, Änderung und Formatierung von Daten</a> (PDF)</p>
+
+<h3>Ich kann in einem Tabellenkalkulations-Dokument <!--suchen, sortieren und--> einfache Berechnungen ausführen.</h3>
+<p>LibreOffice Calc</p>
+
+<h3>Ich kann in einem Grafikprogramm eine einfache Zeichnung erstellen.</h3>
+
+<p>TuxPaint</p>
+<p>Pinta</p>
+<p>Gimp</p>
+
+<h3>Ich kann einfache Manipulationen <!--(z.B. Auflösung ändern, Objekte freistellen, Texte hinzufügen)--> in einem Bildbearbeitungsprogramm ausführen.</h3>
+<p>Gimp</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Gimp Zeichenprogramm/12gimp_portrait_vereinfachen.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+
+<p>TuxPaint</p>
+<p>Pinta</p>
+<p>Inkscape : <a href="https://inkscape.org/de/lernen/tutorials/">Tutorial (Web)</a>
+
+<h3>Ich kann Bilder oder Grafiken <!--(z.B. eigene Computerzeichnungen)--> in ein Text-Dokument einfügen und das Dokument anschliessend gestalten.</h3>
+
+<p>LibreOffice Writer: <a href="https://wiki.documentfoundation.org/images/3/3d/WriterHandbuch_Kapitel_08_ArbeitenMitGrafiken_V53.pdf">Arbeiten mit Grafiken</a> (PDF)</p>
+
+<h3>Ich kann eine Bildschirmpräsentation erstellen.</h3>
+
+<p>Pahvi</p>
+<p>FotoFilmStrip</p>
+<p>LibreOffice Writer: PDF-Präsentationen (PDF)</p>
+
+<p>LibreOffice Impress: 1. Beginnen</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/impress/impress-01-beginnen.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Impress: 2. Kennen lernen</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/impress/impress-02-kennenlernen.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Impress: 3. Design</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/impress/impress-03-design.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Impress: 4. Schriftart</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/impress/impress-04-schriftart.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Impress: 5. Bilder</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/impress/impress-05-bilder.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Impress: 6. Folienübergang</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/impress/impress-06-folienuebergang.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+<p>LibreOffice Impress: 7. Animation</p>
+<video width="320" height="240" controls>
+  <source src="Lernen_der_IT/Libre Office/impress/impress-07-animation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
+
+
+
+<p>LibreOffice Impress: <a href="https://wiki.documentfoundation.org/images/9/95/ImpressHandbuch_Kapitel_01_Einfuehrung.pdf">Einführung</a> (PDF)</p>
+
+<!--<h3>Ich kenne die Grundsätze für die Gestaltung von guten Bildschirmpräsentationen.</h3>-->
+
+<!--<h3>Ich kann einen Vortrag mit Hilfe einer Bildschirmpräsentation halten.</h3>-->
+
+<h3>Ich kann im Internet nach einem Thema suchen<!-- und die Suche so verfeinern, damit die Auswahl der gefundenen Seiten überschaubar wird-->.</h3>
+
+<p>BlindeKuh</p>
+<p>FraggFinn</p>
+<p>KIndersuchmaschine</p>
+
+
+<h3>Ich kann Texte, Bilder und Töne aus dem Internet abspeichern und weiterverarbeiten.</h3>
+
+<p>Audiyou</p>
+<p>Flickr</p>
+
+<p>Audacity: <a href="http://www.medienkindheit.de/medien-kreativ/deutschsprachiger-screencast-zu-audacity/">Einführung</a> (Video)</p>
+<p>AviDemux: Anleitung (Video)</p>
+<p>Pitivi</p>
+<p>OpenShot</p>
+
+
+<h3>Ich kann geläufig mit der Tastatur schreiben.</h3>
+
+<p>Tipp10</p>
+<p>kTouch</p>
+<p>Tuxtype: <a href="http://www.medienkindheit.de/elearning-und-edutainment/lernsoftware/screencast-tuxtype-freeware-schreibmaschinen-lernprogramm-fuer-kinder/">Schreibmaschine</a> (Video)</p>
+<!--
+<h2>Einsichten</h2>
+
+<h3>Ich kenne Vor- und Nachteile von Computern</h3>
+
+<h3>Ich kann beschreiben, welche Auswirkungen der Computer auf mein Lern- und Freizeitverhalten, sowie auf mein Wohlbefinden hat.</h3>
+
+<h3>Ich kenne die Verhaltensregeln im Internet (Netiquette) und halte mich daran.</h3>
+
+<h3>Ich kenne die Bestimmungen des Urheberrechts und halte mich daran.</h3>
+
+<h3>Ich kenne Beispiele für digital manipulierte Bilder und Töne.</h3>
+
+<h3>Ich gehe sorgfältig mit meinen eigenen Daten und mit Daten anderer Personen um.</h3>
+-->
+</body>
+
+</html>

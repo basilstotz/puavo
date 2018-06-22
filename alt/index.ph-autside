@@ -1,0 +1,28 @@
+<?php
+    $sprachen = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
+
+    $sprache=explode(",",$sprachen);
+
+    $l="";
+    foreach($sprache as $lang){
+        if($l==""){
+            if(eregi('en',$lang))$l="en";
+            if(eregi('de',$lang))$l="de";
+            if(eregi('fr',$lang))$l="fr";
+        }
+    }
+
+   switch($l){
+      case "de": $weiterleitung="https://www.amxa.ch/puavo/index-de.html";
+                 break;
+
+      case "fr": $weiterleitung="https://www.amxa.ch/puavo/index-fr.html";
+                 break;
+
+      case "en":
+      default:   $weiterleitung="https://www.amxa.ch/puavo/index-en.html";
+                 break;
+   }
+
+   header ("location: $weiterleitung");
+?>
