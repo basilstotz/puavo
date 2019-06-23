@@ -1,0 +1,29 @@
+body {
+ font-family: sans-serif;
+ color: #333333;
+}
+
+div.alert-success {
+  background-color: lightgreen;
+}
+div.alert-info {
+  background-color: lightblue;
+}
+div.alert-warning {
+  background-color: khaki;
+}
+div.alert-danger {
+  background-color: lightsalmon;
+}
+div.alert {
+
+  font-size: 100%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+

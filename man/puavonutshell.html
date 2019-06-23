@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="hackmd.css">
+  </head>
+  <body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" style="position: relative;">
+      <h1 id="Puavo-in-a-Nutshell">Puavo in a Nutshell</h1>
+      <h2 id="Einleitung">Einleitung</h2>
+      <p>Puavo besteht aus nur zwei Komponenten:</p>
+      <ul>
+        <li><strong>PuavoUsers</strong> ist die schulextern gehostete Komponente
+          von Puavo</li>
+        <li><strong>PuavoOS</strong> das Betriebssystem der Puavo-Clients an der
+          Schule</li>
+      </ul>
+      <p>Beide Komponenten sind freie Software (<a href="https://www.gnu.de/documents/gpl-2.0.de.html"
+          target="_blank" rel="noopener">GPLv2</a>) und von der Codebasis und im
+        Aufbau voneinander unabhängig.</p>
+      <h2 id="PuavoUsers">PuavoUsers</h2>
+      <div class="alert alert-success">
+        <p>Der Name <em>PuavoUsers</em> ist ein wenig irreführend, da Geräte
+          und Benutzer verwaltet werden.</p>
+      </div>
+      <p><a href="https://github.com/opinsys/puavo-users" target="_blank" rel="noopener">PuavoUsers</a>
+        ist ein gehosteter Dienst mit Web-Backend bestehend aus mehreren
+        Datenbanken:</p>
+      <ul>
+        <li>Benutzerverwaltung</li>
+        <li>Geräteverwaltung</li>
+        <li>PuavoOS-Client-Konfiguration</li>
+      </ul>
+      <p>Diese Datenbanken werden von den PuavoOs-Clients zur Benutzer- und
+        Clientauthentifizierung und zur Client-Konfiguration benutzt.</p>
+      <p>Alle PuavoOS-Clients sind deshalb über's Internet über eine <a href="https://de.wikipedia.org/wiki/Representational_State_Transfer"
+          target="_blank" rel="noopener">ReST</a>-Schnittstelle im ständigen
+        Kontakt mit PuavoUsers. Sie komunizieren verschlüsselt über ein <a href="https://de.wikipedia.org/wiki/Virtual_Private_Network"
+          target="_blank" rel="noopener">VPN</a> und übertagen (bis auf den
+        Benutzernamen) nie <a href="https://de.wikipedia.org/wiki/Personenbezogene_Daten"
+          target="_blank" rel="noopener">personenbezogene Daten</a></p>
+      <div class="alert alert-success">
+        <p>Das WWW ist ein Informations-Dienst für Menschen. ReST ist das
+          Gleiche, jedoch für Maschinen. Ein Client stellt Anfragen wie "Hallo
+          ReST: ich bin ein PuavoClient und ich heisse Anton. Sende mir bitte
+          meine Systemeinstellungen". Darauf sendet ReST diese an den Client und
+          dieser kann sich entsprechend konfigurieren.</p>
+      </div>
+      <p>PuavoUser bietet auch ein <a href="https://de.wikipedia.org/wiki/Single_Sign-on"
+          target="_blank" rel="noopener">Single Sign-On</a> für andere
+        Web-Dienste an.</p>
+      <div class="alert alert-success">
+        <p>PuavoUsers ist bezüglich der Nutzerdaten (z.B. in <code>/home/*</code>
+          auf den Lerngeräten) vollständig agnostisch: Es werden, mit Ausnahme
+          vom Benutzernamen, keine personenbezogenen Daten gespeichert oder
+          verarbeitet.</p>
+        <p>Wenn beim Einrichten der Benutzer <a href="https://de.wikipedia.org/wiki/Nickname"
+            target="_blank" rel="noopener">Nicks</a> (statt Klarnamen) verwendet
+          werden, dann werden gar keine personenbezogenen Daten mehr
+          übermittelt.</p>
+      </div>
+      <p>Ein Überblick auf Organisationstruktur und das Web-Backend:</p>
+      <iframe src="https://www.youtube.com/embed/GBMHUwVHvxI" width="600" height="320">
+      </iframe>
+      <!--
+      <p><span class="youtube" data-videoid="GBMHUwVHvxI"><img src="//img.youtube.com/vi/GBMHUwVHvxI/hqdefault.jpg"><i            class="icon fa fa-youtube-play fa-5x"></i></span></p>
+      -->
+      <h2 id="PuavoOS">PuavoOS</h2>
+      <p><a href="https://github.com/puavo-org/puavo-os/" target="_blank" rel="noopener">PuavoOS</a>
+        ist ein Debian basiertes universelles Betriebssystem. Es unterstützt
+        eine Vielzahl an PuavOS-Client-Typen:</p>
+      <ul>
+        <li>Geräte für Endbenutzer: <strong>Puavo-Lerngeräte</strong></li>
+        <li>Geräte für schulinterne Dienste: <strong>PuavoBox</strong></li>
+        <li>Geräte um PuavoOS zu bauen und an PuavoOS-Clients zuverteilen: <strong>PuavoImage</strong></li>
+      </ul>
+      <p>Alle PuavoOS-Clients</p>
+      <ul>
+        <li>werden mit dem identischen "all in one" PuavoOS betrieben</li>
+        <li>werden (von PuavoUsers über ReST) automatisch konfiguriert</li>
+        <li>aktualisieren (von PuavoImage über https) automatisch das
+          installierte PuavoOS im laufenden (Normal-)Betrieb</li>
+      </ul>
+      <div class="alert alert-success">
+        <p>PuavoOS ist <em>universell</em>: Es gibt eine einzige
+          PuavoOS-Version für alle Client-Typen und für alle beliebigen
+          Hersteller, Marken und Modelle.</p>
+      </div>
+      <div class="alert alert-success">
+        <p>PuovoOS ist <em>vollständig</em>: Es stellt alles "aus einem Guss"
+          zur Verfügung, was an der Schule benötigt wird.</p>
+      </div>
+      <div class="alert alert-success">
+        <p>PuavoOS ist <em>rekursiv</em>: Es kann sich selber herstellen,
+          modifzieren und verteilen.</p>
+      </div>
+      <h4 id="PuavoOS-Images">PuavoOS-Images</h4>
+      <p>Zur Verteilung von PuavoOS und für dessen Installation auf den Clients
+        wird ein Laufwerk-Abbild resp. Image des PuavoOS auf dem komprimierenden
+        <a href="https://de.wikipedia.org/wiki/SquashFS" target="_blank" rel="noopener">Squash</a>-Filesystem
+        benutzt.</p>
+      <div class="alert alert-info">
+	<ul>
+          <li>Die Image-Datei ist auf einem per Design nicht beschreibbaren
+            Filesystem. Dadurch kann das verwendete Image (bei der Nutzung)
+            unmöglich verändert werden.</li>
+          <li>Jeder PuavoOS-Client läuft daher immer auf einem "frisch
+            installiertem" Betriebssystem.</li>
+	  <li>Das das Image immer gepackt vorliegt und "live" entpackt wird, werden Daten vom Image mit der doppelten
+	    physikalischen Lesegeschwindigkeit eingelesen</li>
+	</ul>
+      </div>
+      <div class="alert alert-success">
+         <p>Alle Clients, auch Laptops und PuavoBoxen, werden mit dem identischen LTSP Netboot-Image (<a href="https://ltsp.org">ltsp.org</a>) gestartet. <a href="http://labs.opinsys.com/blog/2014/01/31/how-to-boot-ltsp-client-from-harddrive-using-grub/">Hier</a> wird erklärt, wie Laptops mit einem Netboot-Image benutzt werden können.</p>
+      </div>
+      <p>Die Grösse des Image beträgt komprimiert etwa 12-17 GByte.</p>
+      <p>Damit bei einer Aktualisierung der Images weniger Trafic verursacht
+        wird, werden nur die Differenzen zur Vorgängerversion übertragen. Die
+        Grösse einer solchen differentiellen Aktualisierung ist zwischen 0.2-3
+        Gbyte.</p>
+      <h4 id="Konfiguration-von-PuavoOS-Clients">Konfiguration von
+        PuavoOS-Clients</h4>
+      <p>PuavoOS-Clients sind vollständig befreit von jeglicher
+        (Software-)Wartung und jeglicher Konfiguration.</p>
+      <div class="alert alert-warning">
+        <p>Es können an PuavoOS-Clients keine System-Einstellungen vorgenommen
+          werden. Alle Einstellungen werden im Web-Backend von PuavoUsers
+          gemacht.</p>
+      </div>
+      <p>PuavoOS-Clients holen beim Booten und danach jede Stunde (von
+        PuavoUsers über PuavoReST) ihre aktuelle Konfiguration und wenden diese
+        dann auf das sich an.</p>
+      <p>Eine Aktualisierung der Konfiguration benötigt etwa 2-4 KByte Traffic.</p>
+      <div class="alert alert-success">
+        <p>Ein laufender Client erzeugt durchschnittlich also etwa 10Byte/s
+          externen Traffic.</p>
+      </div>
+      <div class="alert alert-info">
+        <p>Falls der Client keinen Internetzugang funktioniert alles mit den
+          aktuellen Einstellungen weiter.</p>
+      </div>
+      <h4 id="Aktualisierung-des-PuavOS">Aktualisierung des PuavOS</h4>
+      <p>Wenn PuavOS festellt, dass ein Update des PuavoOS vorliegt, beginnt es
+        damit das Image der neuen Version von Image-Dienst herunter zu laden:</p>
+      <ul>
+        <li>Falls auf dem Image-Dienst eine passende Differenzen-Datei zwischen
+          einem bereits installierten Image und dem Neuen gefunden wird, dann
+          wird die Differenzen-Datei herunter geladen und das neue Image wird
+          dann aus dem Vorhandenen und der Differenzen-Datei gepatcht.</li>
+        <li>Wenn keine passenden Differenzen-Datei gefunden wurde, wird das
+          Image als Ganzes heruntergeladen.</li>
+      </ul>
+      <div class="alert alert-info">
+        <p>Falls sich der Client in der Schule befindet wird dabei <strong>kein
+            externer Traffic</strong> in's Internet erzeugt, denn die PuavoBox
+          wird als Image-Dienst verwendet.</p>
+      </div>
+      <p>Sobald die neue Version vollständig heruntergeladen/gepatcht und
+        kryptographisch verifiziert (<a href="https://de.wikipedia.org/wiki/Message-Digest_Algorithm_5"
+          target="_blank" rel="noopener">md5sum</a>) ist, wird sie als default
+        Boot-OS festgelegt.</p>
+      <div class="alert alert-success">
+        <p>Die kryptographische Verifizierung gegen die vom PuavoImage
+          ursprünglich generierte Version schliesst jeden Fehler beim
+          Aktualisieren des PuavoOS aus.</p>
+      </div>
+      <p>Beim nächsten Bootvorgang wird das akualisierte PuavoOS gestartet.</p>
+      <div class="alert alert-info">
+        <p>Diese Art der Aktualisierung ist <em>atomisch</em>: Das ganze
+          PuavoOS wird mit einem einzigen "unteilbaren Schritt", dem
+          Bootprozess, vollständig ersetzt.</p>
+      </div>
+      <p>Die Aktualisierung des PuavoOs passiert im Hintergrund über das WLAN
+        während des normalen Schulbetriebs.</p>
+      <div class="alert alert-success">
+        <p>Um eine typische Aktualiserung vollständig durchzuführen muss ein
+          Laptop etwa eine Stunde (mit WLAN-Verbindung) eingeschaltet sein. Ein
+          Login ist nicht nötig.</p>
+      </div>
+      <div class="alert alert-info">
+        <p>Ein PuavoOS-Client kann während einer laufenden Aktualisierung ohne
+          Probleme jederzeit abgeschaltet werden. Beim nächsten Start wird die
+          unterbrochene Aktualisierung an der Abbruchstelle fortgesetzt.</p>
+      </div>
+      <div class="alert alert-info">
+        <p>Jeder PuavoOS-Client hat immer zwei PuavoOS-Versionen "vorrätig". Er
+          bietet neben der aktuellen PuavoOS-Version immer noch die vorherige
+          Version als Backup an.</p>
+      </div>
+      <p>Der atomische Update mit einem kryptographisch geprüften Image führt zusammen mit dem Backup-Image
+	zu einem praktisch "unkapputbaren" Updateprozess.</p>	  
+      <h2>PuavoOS-Clients</h2>
+      <h3 id="Puavo-LerngerÃ¤te">Puavo-Lerngeräte</h3>
+      <p>Aus Benutzersicht verhält sich jedes PuavOS-Lerngerät wie eine ganz
+        gewöhnliche</p>
+      <ul>
+        <li>mit einem angepasstem Gnome3-Desktop</li>
+        <li>einem erweiterten Angebot an Software</li>
+      </ul>
+      <p>ausgetattete standard Debian-Installation. Die Benutzerdaten werden,
+        wieder wie jedem gewöhnlichen Installation, in lokalen Profilen
+        permanent gespeichert.</p>
+      <div class="alert alert-info">
+        <p>Diese lokalen Profile werden von PuavoOS in nie "angefasst", so
+          werden z.B. keine Profile synchronisiert oder anderweitig bearbeitet.</p>
+      </div>
+      <p>Falls das Lerngerät mit einer PuavoBox verbunden ist, werden jedem
+        Benutzer automatisch zusätzlich persönliche und geteilte <em>Netzlaufwerke</em>
+        angeboten.</p>
+      <div class="alert alert-success">
+        <p>Bei einem geteilten Laptop, welcher von mehreren SuS gemeinsam
+          benutzt wird, sind diese Netzlaufwerke der standard Speicherort. So
+          kann jeder SuS eine angefange Arbeit auf jedem beliebigen anderen
+          Laptop weiter berabeiten.</p>
+      </div>
+      <h3 id="PuavoBox">PuavoBox</h3>
+      <p>Die PuavoBox</p>
+      <ul>
+        <li>minimiert den Internet-Traffic, indem sie Klone der Clouddienste
+          (PuavoReST, PuavoImage) lokal (in der Schule) hostet.</li>
+        <li>schützt und konfiguriert das lokale Netzwerk (firewall, dhcp, dns,
+          ...)</li>
+        <li>ermöglicht den Gebrauch von virtuellen (Netboot-)Clients</li>
+        <li>stellt lokal persönliche und geteilte (SMB-)Netzlaufwerke zur
+          Verfügung.</li>
+        <li>stellt einen CUPS-Druckerdienst zur Verfügung.</li>
+      </ul>
+      <div class="alert alert-info">
+        <p>Dank der PuavoBox kann Puavo problemlos mit einer Internetverbindung
+          mit 1MBit/s Download und 0.1MBit Upload betrieben werden.</p>
+      </div>
+      <p>Puavo funktioniert aber auch ganz ohne Internetverbindung. Ohne
+        Verbindung können einfach keine neuen Einstellungen von PuavoUsers
+        übernommen werden.</p>
+      <div class="alert alert-info">
+        <p><em>Die PuavoBox ist ein ganz gewöhnlicher Puavo-Client</em>, welcher
+          statt eines Desktop lokale Netzwerkdienste anbietet. Sie benutzt das
+          identische PuavoOS wie die Benutzerendgeräte und ist, ebenso wie
+          diese, vollständig (Software-)Wartungs- und Konfigurationsfrei.</p>
+      </div>
+      <div class="alert alert-success">
+        <p>Die PuavoBox ist <em>kein</em> Server.</p>
+      </div>
+      <h3 id="PuavoImage">PuavoImage</h3>
+      <p>Ein PuavoImage-Client kann PuavoOS Images "from scratch" bauen und diese sich
+        selbst(!) und allen anderen Clients über das Internet zur Verfügung stellen.</p>
+      <div class="alert alert-info">
+        <p>PuavoImage-Clients sind normalerweise nicht an der Schule, sondern in
+          einem externen Datacenter.</p>
+      </div>
+      <h2 id="Datensicherung">Datensicherung</h2>
+      <div class="alert alert-warning">
+        <p>Eine Datensicherung darf nie am selben Ort wie die zu sichernden
+          Daten abgelegt werden. Die Datensicherung verletzt daher "vorsätzlich"
+          das Paradigma von Puavo, dass keine personenbezogenen Daten die Schule
+          verlassen.</p>
+      </div>
+      <p>Die Datensicherung ist ein eigenständiger Dienst, sie ist vollständig
+        unabhängig von PuavoUsers und PuavoOS.</p>
+      <div class="alert alert-info">
+        <p>Es ist ohne Probleme möglich einen anderen Backup-Dienst (eines
+          Drittanbieters) zu verwenden.</p>
+      </div>
+      <p>Sie beinhalted eine tägliche Sicherung der Daten auf der PuavoBox
+        gespeicherten Daten und dient dazu bei einem Ausfall der PuavoBox diese
+        wieder zu rekonstruieren.</p>
+      <div class="alert alert-warning">
+        <p>Der Backup-Dienst sichert <strong>nur die auf der PuavoBox liegenden
+            Daten</strong> der persönlichen und geteilten Netzlaufwerke.</p>
+      </div>
+      <div class="alert alert-warning">
+        <p>Der Backup-Dienst sichert <strong>nicht</strong> die lokalen Profile
+          der Lerngeräte!</p>
+      </div>
+      <div class="alert alert-warning">
+        <p>PuavoOS synchronisiert <strong>keine</strong> lokale Benuzterprofile
+          der Lerngeräte auf die PuavoBox. Der Benuzter ist verantwortlich die
+          zu sichernden Daten <strong>händisch</strong> auf sein Netzlaufwerk
+          zu kopieren.</p>
+      </div>
+      <div dir="ltr" class="resize-sensor" style="position: absolute; left: -10px; top: -10px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+        <div class="resize-sensor-expand" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+          <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div>
+        </div>
+        <div class="resize-sensor-shrink" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+          <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
