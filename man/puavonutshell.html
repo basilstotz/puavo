@@ -10,7 +10,7 @@
       <h2 id="Einleitung">Einleitung</h2>
       <p>Puavo besteht aus nur zwei Komponenten:</p>
       <ul>
-        <li><strong>PuavoUsers</strong> ist die schulextern gehostete Komponente
+        <li><strong>PuavoWeb</strong> ist die schulextern gehostete Komponente
           von Puavo</li>
         <li><strong>PuavoOS</strong> das Betriebssystem der Puavo-Clients an der
           Schule</li>
@@ -18,13 +18,9 @@
       <p>Beide Komponenten sind freie Software (<a href="https://www.gnu.de/documents/gpl-2.0.de.html"
           target="_blank" rel="noopener">GPLv2</a>) und von der Codebasis und im
         Aufbau voneinander unabhängig.</p>
-      <h2 id="PuavoUsers">PuavoUsers</h2>
-      <div class="alert alert-success">
-        <p>Der Name <em>PuavoUsers</em> ist ein wenig irreführend, da Geräte
-          und Benutzer verwaltet werden.</p>
-      </div>
-      <p><a href="https://github.com/opinsys/puavo-users" target="_blank" rel="noopener">PuavoUsers</a>
-        ist ein gehosteter Dienst mit Web-Backend bestehend aus mehreren
+      <h2 id="PuavoWeb">PuavoWeb</h2>
+      <p><a href="https://github.com/puavo-org/puavo-web" target="_blank" rel="noopener">PuavoWeb</a>
+        ist ein gehosteter Dienst mit Web-Frontend bestehend aus mehreren
         Datenbanken:</p>
       <ul>
         <li>Benutzerverwaltung</li>
@@ -35,7 +31,7 @@
         Clientauthentifizierung und zur Client-Konfiguration benutzt.</p>
       <p>Alle PuavoOS-Clients sind deshalb über's Internet über eine <a href="https://de.wikipedia.org/wiki/Representational_State_Transfer"
           target="_blank" rel="noopener">ReST</a>-Schnittstelle im ständigen
-        Kontakt mit PuavoUsers. Sie komunizieren verschlüsselt über ein <a href="https://de.wikipedia.org/wiki/Virtual_Private_Network"
+        Kontakt mit PuavoWeb. Sie komunizieren verschlüsselt über ein <a href="https://de.wikipedia.org/wiki/Virtual_Private_Network"
           target="_blank" rel="noopener">VPN</a> und übertagen (bis auf den
         Benutzernamen) nie <a href="https://de.wikipedia.org/wiki/Personenbezogene_Daten"
           target="_blank" rel="noopener">personenbezogene Daten</a></p>
@@ -50,7 +46,7 @@
           target="_blank" rel="noopener">Single Sign-On</a> für andere
         Web-Dienste an.</p>
       <div class="alert alert-success">
-        <p>PuavoUsers ist bezüglich der Nutzerdaten (z.B. in <code>/home/*</code>
+        <p>PuavoWeb ist bezüglich der Nutzerdaten (z.B. in <code>/home/*</code>
           auf den Lerngeräten) vollständig agnostisch: Es werden, mit Ausnahme
           vom Benutzernamen, keine personenbezogenen Daten gespeichert oder
           verarbeitet.</p>
@@ -77,7 +73,7 @@
       <p>Alle PuavoOS-Clients</p>
       <ul>
         <li>werden mit dem identischen "all in one" PuavoOS betrieben</li>
-        <li>werden (von PuavoUsers über ReST) automatisch konfiguriert</li>
+        <li>werden (von PuavoWeb über ReST) automatisch konfiguriert</li>
         <li>aktualisieren (von PuavoImage über https) automatisch das
           installierte PuavoOS im laufenden (Normal-)Betrieb</li>
       </ul>
@@ -124,11 +120,11 @@
         (Software-)Wartung und jeglicher Konfiguration.</p>
       <div class="alert alert-warning">
         <p>Es können an PuavoOS-Clients keine System-Einstellungen vorgenommen
-          werden. Alle Einstellungen werden im Web-Backend von PuavoUsers
+          werden. Alle Einstellungen werden im Web-Backend von PuavoWeb
           gemacht.</p>
       </div>
       <p>PuavoOS-Clients holen beim Booten und danach jede Stunde (von
-        PuavoUsers über PuavoReST) ihre aktuelle Konfiguration und wenden diese
+        PuavoWeb über PuavoReST) ihre aktuelle Konfiguration und wenden diese
         dann auf das sich an.</p>
       <p>Eine Aktualisierung der Konfiguration benötigt etwa 2-4 KByte Traffic.</p>
       <div class="alert alert-success">
@@ -230,7 +226,7 @@
           mit 1MBit/s Download und 0.1MBit Upload betrieben werden.</p>
       </div>
       <p>Puavo funktioniert aber auch ganz ohne Internetverbindung. Ohne
-        Verbindung können einfach keine neuen Einstellungen von PuavoUsers
+        Verbindung können einfach keine neuen Einstellungen von PuavoWeb
         übernommen werden.</p>
       <div class="alert alert-info">
         <p><em>Die PuavoBox ist ein ganz gewöhnlicher Puavo-Client</em>, welcher
@@ -256,7 +252,7 @@
           verlassen.</p>
       </div>
       <p>Die Datensicherung ist ein eigenständiger Dienst, sie ist vollständig
-        unabhängig von PuavoUsers und PuavoOS.</p>
+        unabhängig von PuavoWeb und PuavoOS.</p>
       <div class="alert alert-info">
         <p>Es ist ohne Probleme möglich einen anderen Backup-Dienst (eines
           Drittanbieters) zu verwenden.</p>
